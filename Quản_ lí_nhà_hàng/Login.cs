@@ -30,6 +30,7 @@ namespace Quản__lí_nhà_hàng
                 st.ShowDialog();
                 this.Show();
             }
+            //check quyền login là staff hay là manager
             else if ((login.Login(username, password) == true) & (login.check_admin(username, password) == true))
             {
                 Admin ad = new Admin();
